@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5dmo4qlrcsx5"]
+
+[ext_resource type="Script" path="res://Asteroid_Movement/rocket.gd" id="1_68raa"]
+[ext_resource type="Texture2D" uid="uid://bahdpi0iv0uo4" path="res://Asteroid_Movement/Rocky-0-rocket.png" id="1_py4cw"]
+
+[node name="Rocket" type="CharacterBody2D"]
+script = ExtResource("1_68raa")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_py4cw")

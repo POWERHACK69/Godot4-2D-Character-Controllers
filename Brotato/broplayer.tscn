@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://biofxuapu6f3y"]
+
+[ext_resource type="Texture2D" uid="uid://coh8ly8d7wdtc" path="res://Brotato/idle_0.png" id="1_et3eb"]
+[ext_resource type="Script" path="res://Brotato/broplayer.gd" id="1_iyijw"]
+[ext_resource type="Texture2D" uid="uid://c33osiemk1f2j" path="res://Brotato/weaponR1.png" id="2_g5nov"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yrv2r"]
+radius = 24.5153
+
+[node name="Broplayer" type="CharacterBody2D"]
+script = ExtResource("1_iyijw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3, -27)
+texture = ExtResource("1_et3eb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, 36)
+shape = SubResource("CircleShape2D_yrv2r")
+
+[node name="WeaponPivot" type="Node2D" parent="."]
+
+[node name="GunSprite2D" type="Sprite2D" parent="WeaponPivot"]
+position = Vector2(78, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_g5nov")
